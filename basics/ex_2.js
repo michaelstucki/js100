@@ -1,0 +1,10 @@
+let n = 4936;
+let thousands = (n - n % 1000) / 1000;
+let hundreds = (n % 1000 - n % 100) / 100;
+let tens = (n % 100 - n % 10) / 10;
+let ones = n % 10;
+console.log(`Number: ${n}`);
+console.log(`Thousands: ${thousands}`);
+console.log(`Hundreds: ${hundreds}`);
+console.log(`Tens: ${tens}`);
+console.log(`Ones: ${ones}`);
